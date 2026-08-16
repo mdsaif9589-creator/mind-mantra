@@ -1,0 +1,6 @@
+{
+  "name": "MIND MANTRA",
+  "description": "A privacy-focused personal wellbeing and life-growth platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

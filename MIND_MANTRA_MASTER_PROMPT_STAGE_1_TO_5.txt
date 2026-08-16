@@ -1,0 +1,1026 @@
+MIND MANTRA
+MASTER BUILD PROMPT — STAGE 1 → FINAL STAGE 5
+================================================
+
+PRODUCT NAME
+------------
+MIND MANTRA
+
+CORE EXPERIENCE
+---------------
+Talk. Connect. Practice. Grow.
+
+MIND MANTRA is a privacy-focused personal wellbeing and life-growth platform.
+It should feel like a peaceful, immersive personal digital sanctuary — not a
+generic SaaS dashboard, social-media app, children's game, or clinical website.
+
+IMPORTANT WORKFLOW
+------------------
+This is ONE MASTER PROMPT SHEET containing the complete product roadmap.
+
+DO NOT paste the entire sheet into Google AI Studio in one request.
+
+Use:
+STAGE 1 → TEST → FIX → LOCK
+STAGE 2 → TEST → FIX → LOCK
+STAGE 3 → TEST → FIX → LOCK
+STAGE 4 → TEST → FIX → LOCK
+STAGE 5 → TEST → SECURITY TEST → LAUNCH
+
+GLOBAL AI STUDIO RULES
+----------------------
+1. Never randomly redesign unrelated parts of the application.
+2. Never remove working functionality.
+3. Preserve previous stages.
+4. Only modify what the current stage explicitly requires.
+5. Keep code modular and reusable.
+6. Keep privacy and safety central.
+7. Do not collect unnecessary personal data.
+8. Do not create fake functionality that appears production-ready.
+9. Use real implementation where available; otherwise create clearly structured placeholders.
+10. After each stage, verify all previous stages still work.
+11. If a bug appears in an older stage, fix it before continuing.
+12. Do not change the visual identity without explicit instruction.
+
+================================================
+STAGE 1 — FOUNDATION + IMMERSIVE 3D UI
+================================================
+
+GOAL
+----
+Create the stable visual and navigation foundation of MIND MANTRA.
+
+VISUAL IDENTITY
+---------------
+Primary style:
+IMMERSIVE UI
+
+Supporting style:
+- sophisticated
+- cinematic
+- dreamlike
+- premium
+- organic
+- peaceful
+- slightly magical
+- subtle artistic flair
+
+Do NOT make it:
+- childish
+- flat
+- generic SaaS
+- gaming-dashboard-like
+- excessive neon
+- excessive glassmorphism
+- medical/clinical
+
+Use frosted glass only subtly where appropriate.
+
+3D WORLD REQUIREMENT
+--------------------
+The Personal World MUST be based on a premium 3D visual experience.
+
+Do NOT use flat tree icons, SVG-style trees, emoji-like objects, or basic
+CSS illustrations as the final visual.
+
+Use a Three.js/WebGL-compatible architecture or another appropriate browser
+3D approach where practical.
+
+The central world object should have:
+- real 3D depth
+- materials
+- lighting
+- shadows
+- atmospheric depth
+- subtle animation
+- cinematic composition
+- premium stylized realism
+- dreamlike fantasy atmosphere
+
+The experience should feel inspired by:
+cinematic 3D environments + peaceful manga/anime atmosphere + digital sanctuary
+
+Do not copy any specific anime/game.
+
+AUTH / WELCOME
+--------------
+Create:
+
+MIND MANTRA
+
+“A quiet place for your mind.”
+
+“Talk. Connect. Practice. Grow.”
+
+Buttons:
+- Begin
+- I already have an account
+
+Create login/signup UI with:
+- Email
+- Password
+- mock/local authentication for Stage 1
+
+Do not build production authentication yet.
+
+ONBOARDING
+----------
+Collect only:
+- Display Name
+- Country
+- Language
+- Optional avatar
+
+COUNTRY
+-------
+Create country selection with search.
+
+Include at minimum:
+India, Japan, South Korea, China, USA, UK, France, Italy,
+Canada, Australia, Germany, Brazil.
+
+Country should subtly influence the environment through:
+- atmosphere
+- lighting
+- nature
+- architecture
+- environmental details
+
+Do not create exaggerated stereotypes.
+
+LANGUAGE
+--------
+Create a dedicated language selection step after Country.
+
+Languages:
+English
+Hindi
+Hinglish
+Bengali
+Urdu
+Spanish
+French
+German
+Japanese
+Korean
+Chinese
+Portuguese
+Arabic
+
+Save selected language locally.
+
+Full translation/i18n is NOT required in Stage 1.
+
+PERSONAL WORLD OBJECT
+---------------------
+Heading:
+“Choose what represents you.”
+
+Objects:
+- Tree
+- Bonsai
+- Flower
+- Cactus
+- Mountain
+- Ocean
+- Island
+- Planet
+- Lantern
+- Crystal
+
+These are NOT simple icons.
+
+Every object must be presented as a sophisticated 3D object/miniature
+environment.
+
+TREE REQUIREMENT
+----------------
+The Tree is the primary example and must look mature and premium.
+
+It must have:
+- organic trunk
+- natural branches
+- layered leaves
+- realistic depth
+- cinematic lighting
+- soft shadows
+- subtle wind
+- floating particles
+- atmospheric depth
+- slight magical quality
+
+It must NOT look like:
+- children's cartoon
+- flat illustration
+- emoji
+- SVG icon
+- basic CSS shape
+- farming-game object
+
+Other objects must have the same quality.
+
+OBJECT INTERACTION
+------------------
+Hover:
+- subtle scale
+- soft highlight
+- slight environmental movement
+
+Select:
+- elegant highlight
+- object becomes slightly prominent
+- subtle atmosphere reaction
+- optional soft interaction sound
+
+No bouncing, flashing, excessive glow, or neon borders.
+
+SCROLLING
+---------
+The object selection screen MUST scroll naturally.
+
+Do not use fixed-height containers or overflow:hidden that block scrolling.
+
+Desktop mouse-wheel scrolling must work.
+Mobile touch scrolling must work.
+Continue button must always be reachable.
+
+MAIN SANCTUARY
+--------------
+After onboarding, enter the user's personal world.
+
+Full-screen immersive environment.
+
+Central:
+selected 3D world object.
+
+Environment:
+- soft particles
+- atmospheric light
+- subtle wind
+- distant environment
+- gentle movement
+- cinematic depth
+
+MAIN NAVIGATION
+---------------
+- Talk
+- Connect
+- Practice
+- Grow
+- World
+
+Only World is fully functional in Stage 1.
+Other sections should be elegant placeholders.
+
+PROFILE
+-------
+Show:
+- Display Name
+- Country
+- Language
+- selected world object
+
+Private account details remain private.
+
+PRIVACY UI
+----------
+Create a privacy center with:
+- profile visibility
+- account privacy
+- manage saved information
+- future export/delete controls
+
+Do not make unsupported privacy claims.
+
+SOUND GALLERY
+------------
+Categories:
+
+Nature:
+Rain, Forest, Ocean, Wind
+
+Calm:
+Soft Piano, Ambient, Meditation, Zen
+
+Atmosphere:
+Night, Fireplace, Mountain, Dream
+
+Controls:
+- play/pause
+- volume
+- mute
+- selection
+- interaction sound volume
+
+Do not autoplay without user interaction.
+
+ANIMATION
+---------
+- slow
+- elegant
+- subtle
+- cinematic
+- organic
+
+Respect prefers-reduced-motion.
+
+RESPONSIVE
+----------
+Desktop, laptop, tablet, mobile.
+
+Mobile must be intentionally designed.
+
+LOCAL DATA
+----------
+For Stage 1 save locally only:
+- mock auth state
+- display name
+- country
+- language
+- selected object
+- selected sound
+- privacy preferences
+
+No production backend/database yet.
+
+STAGE 1 SUCCESS
+---------------
+User can complete:
+Welcome → Login/Signup → Profile → Country → Language → Object → World
+
+and the 3D world works smoothly.
+
+================================================
+STAGE 2 — LIVING WORLD + GROWTH + SOUND
+================================================
+
+GOAL
+----
+Make the user's world feel alive and connect visual growth with meaningful
+personal progress.
+
+CORE IDEA
+---------
+“My peaceful world grows as I grow.”
+
+LOCAL GROWTH STATE
+------------------
+Create:
+- growthProgress: 0–100
+- completedGoals
+- completedPracticeSessions
+- completedReflectionSessions
+- completedRealLifeActions
+- currentLevel
+
+GROWTH LEVELS
+-------------
+1. Beginning: 0–10
+2. Awakening: 11–25
+3. Growing: 26–45
+4. Blooming: 46–65
+5. Flourishing: 66–85
+6. Your World: 86–100
+
+Growth must be gradual.
+
+OBJECT GROWTH
+-------------
+Tree:
+more branches, leaves, environmental detail.
+
+Bonsai:
+more detail and healthier growth.
+
+Flower:
+gradual bloom.
+
+Mountain:
+paths, vegetation and atmosphere.
+
+Ocean:
+richer water and life.
+
+Island:
+more natural/environmental elements.
+
+Planet:
+atmosphere and subtle orbiting elements.
+
+Lantern:
+richer environment and light.
+
+Crystal:
+more internal light and environmental detail.
+
+Growth must feel meaningful, not like a children's farming game.
+
+MEANINGFUL ACTIONS
+------------------
+Growth may come from:
+- reflection
+- goal completion
+- practice
+- real-life action
+
+Do not reward merely opening the app.
+
+GROWTH RESPONSE
+---------------
+When progress increases:
+- central object reacts
+- small environmental change
+- subtle light
+- gentle sound
+- short message
+
+Example:
+“A little growth today.”
+
+No loud celebrations or confetti.
+
+PERSONALITY / WORLD THEME
+-------------------------
+Allow:
+- Nature
+- Ocean
+- Mountain
+- Fantasy
+- Minimal
+- Night
+- Sunrise
+- Garden
+- Space
+- Dream
+
+Influence atmosphere without rebuilding the world.
+
+REFLECTION
+----------
+“What helped you today?”
+
+Options:
+- I learned something
+- I completed something
+- I handled something difficult
+- I connected with someone
+- I took care of myself
+- I simply kept going
+
+Selection creates a small growth event.
+
+SOUND
+-----
+Allow:
+- primary environment sound
+- optional secondary ambient sound
+- independent volume controls
+- local persistence
+
+CALM MODE
+---------
+When enabled:
+- reduce particles
+- slow animations
+- reduce interaction sounds
+- hide unnecessary UI
+- increase visual breathing space
+
+PARALLAX
+--------
+Desktop:
+subtle mouse parallax.
+
+Mobile:
+safe/simple motion.
+
+No motion sickness.
+Respect reduced motion.
+
+DEVELOPMENT TEST PANEL
+----------------------
+Development-only:
+- +5 growth
+- +10 growth
+- Complete reflection
+- Complete goal
+- Complete practice
+- Complete real-life action
+- Change object
+- Change theme
+- Reset progress
+
+Do not expose this to normal users in production.
+
+STAGE 2 SUCCESS
+---------------
+User can:
+enter world → choose atmosphere/sound → complete meaningful action →
+see progress → see world respond → return later and retain local progress.
+
+================================================
+STAGE 3 — AI COMPANION + PRACTICAL EXPERIENCE
+================================================
+
+GOAL
+----
+Add the AI experience without redesigning the existing world.
+
+AI ROLE
+-------
+The AI is a calm personal guide.
+
+It is NOT:
+- a therapist
+- a doctor
+- a replacement for professional care
+- an emotional dependency system
+
+It helps users:
+- express thoughts
+- organize ideas
+- understand situations
+- reflect
+- practice skills
+- create practical next steps
+- work toward goals
+
+TALK
+----
+Title:
+“TALK”
+
+Subtext:
+“You can start anywhere.”
+
+Input:
+“What’s on your mind?”
+
+Modes:
+- TALK
+- UNDERSTAND
+- SOLVE
+- PRACTICE
+- PLAN
+
+AI STYLE
+--------
+- calm
+- warm
+- practical
+- concise
+- respectful
+- non-judgmental
+- one useful question at a time
+
+Avoid long lectures unless requested.
+Avoid dependency language.
+Avoid diagnosis.
+
+LANGUAGE
+--------
+Use the user's selected onboarding language.
+Allow manual language switching.
+
+REFLECTION
+----------
+“What feels strongest right now?”
+
+Options:
+Calm, Sad, Stressed, Angry, Lonely, Confused, Motivated,
+Tired, Overwhelmed, I don’t know
+
+Then:
+- Understand
+- Calm
+- Act
+
+CALM EXPERIENCE
+---------------
+Breathing animation:
+Inhale → Hold → Exhale
+
+Optional.
+Allow Skip and Done.
+
+No medical treatment claims.
+
+PRACTICAL TOOLS
+---------------
+- 5-Minute Reset
+- Thought Organizer
+- Simple Goal Planner
+- Difficult Conversation Practice
+- Decision Helper
+- Daily Reflection
+
+DIFFICULT CONVERSATION PRACTICE
+-------------------------------
+User chooses:
+Boss / Friend / Partner / Family / Teacher / Other
+
+User explains situation.
+
+AI roleplays the other person.
+
+After practice:
+- what went well
+- what could be clearer
+- one practical improvement
+
+GOALS
+-----
+When an actual goal appears:
+“Would you like to turn this into a personal goal?”
+
+Connect to Stage 2 growth system.
+Do not create duplicate progress systems.
+
+WORLD RESPONSE
+--------------
+Meaningful AI actions may subtly affect the world:
+- light
+- particles
+- environmental reaction
+- small growth response
+
+PRIVACY
+-------
+Show:
+“Private conversation”
+
+Provide:
+“Clear this conversation”
+
+Only describe the actual storage/processing architecture.
+
+AI SAFETY
+---------
+Never:
+- diagnose
+- prescribe medication
+- encourage self-harm
+- encourage violence
+- manipulate dependency
+- tell users to isolate from real people
+- claim to replace professional care
+
+For potential immediate danger or intent to harm self/others:
+switch to safety-oriented guidance and encourage immediate real-world support
+from a trusted person, local emergency services, or an appropriate crisis
+resource.
+
+Do not shame or guilt the user.
+
+AI ARCHITECTURE
+---------------
+Keep AI integration in a dedicated service/module.
+
+Do not scatter API calls across UI components.
+
+Do not expose private API keys in unsafe client-side code.
+
+LOADING
+-------
+Use a calm “Thinking…” visual state.
+
+ERROR
+-----
+“Something interrupted the conversation.”
+Retry.
+
+Do not show stack traces or secrets.
+
+SOUND
+-----
+Reuse Stage 2 Sound Gallery.
+Do not create a second sound system.
+
+STAGE 3 SUCCESS
+---------------
+World → Talk → Reflection/Practice → Meaningful Action → Growth → World response.
+
+================================================
+STAGE 4 — ANONYMOUS HUMAN CONNECTION
+================================================
+
+GOAL
+----
+Add anonymous human connection while protecting private identity.
+
+IMPORTANT PRIVACY MODEL
+-----------------------
+The platform can have a private internal account identity, but other users
+must not see it.
+
+Never expose:
+- email
+- password
+- phone
+- private account ID
+- exact location
+- private journal
+- private AI conversations
+- other private account data
+
+ANONYMOUS PROFILE
+-----------------
+User-controlled:
+- anonymous display name
+- optional avatar
+- broad country/region if enabled
+- language
+- interests
+- availability
+- optional short bio
+
+Privacy controls:
+- who can see me
+- what profile fields are visible
+
+MATCHING
+--------
+Allow matching preferences:
+- language
+- interests
+- conversation topic
+- general intent
+- availability
+
+Do not use unnecessary sensitive information.
+
+CHAT
+----
+Implement:
+- realtime text chat
+- typing indicator
+- delivered/read states where appropriate
+- mute
+- block
+- report
+- leave conversation
+
+No identity disclosure.
+
+VOICE
+-----
+Do not add direct voice calling unless the infrastructure is ready.
+Prioritize optional voice-to-text input.
+
+PERSISTENT CONNECTION
+---------------------
+Important product problem:
+A user may enjoy talking to someone and not want to meet a random new person
+every time.
+
+Create:
+“Keep Connection”
+
+If BOTH users accept:
+- create a persistent anonymous connection
+- allow both users to find each other again
+- store only minimum required connection data
+- do not reveal identity
+
+CONNECTION LIST
+---------------
+Show:
+- saved anonymous connections
+- last active state if available
+- start chat
+- remove connection
+- block
+
+If a saved person is unavailable:
+offer:
+- another compatible person
+- AI Talk
+- Practice
+- return to World
+
+This prevents the product from becoming boring when a favorite person is offline.
+
+SAFETY
+------
+Every conversation:
+- Report
+- Block
+- Leave
+
+Moderate:
+- harassment
+- threats
+- sexual exploitation
+- scams
+- illegal activity
+- spam
+
+RATE LIMITS
+-----------
+Prevent spam and abuse.
+
+Do not reveal precise location.
+
+STAGE 4 SUCCESS
+---------------
+Connect → anonymous match → chat → mutual Keep Connection →
+find the same anonymous person again later without revealing private identity.
+
+================================================
+STAGE 5 — BACKEND + SECURITY + PRODUCTION + LAUNCH
+================================================
+
+GOAL
+----
+Convert the tested product into a secure production-ready platform.
+
+AUTHENTICATION
+--------------
+Implement secure:
+- signup
+- login
+- password reset
+- session management
+- logout
+- account deletion
+
+Never store plaintext passwords.
+
+DATABASE
+--------
+Use only necessary data models.
+
+Suggested:
+- users
+- profiles
+- preferences
+- world_state
+- growth_state
+- goals
+- connections
+- conversations
+- messages
+- reports
+- blocks
+- safety_events
+
+Do not store unnecessary personal information.
+
+PRIVACY
+--------
+Implement:
+- profile visibility
+- private/public separation
+- conversation deletion
+- connection removal
+- account deletion
+- data export where legally/technically required
+
+Clearly explain what is stored and why.
+
+REALTIME CHAT
+-------------
+Secure realtime messaging.
+Authorize every conversation server-side.
+Never trust client-supplied user IDs or permissions.
+
+AI SECURITY
+-----------
+Keep API keys/server secrets protected.
+Use environment variables.
+Validate client input.
+Do not rely on client-side authorization.
+
+MODERATION
+----------
+Use layered protection:
+- input safety checks
+- spam prevention
+- harassment detection
+- report system
+- block system
+- rate limits
+- high-risk safety flow
+
+Do not rely on one AI prompt as the only safety mechanism.
+
+PERFORMANCE
+-----------
+Optimize:
+- 3D world
+- animations
+- audio
+- assets
+- network requests
+- lazy loading
+- caching
+- mobile performance
+
+Provide graceful fallback for lower-powered devices.
+
+ACCESSIBILITY
+-------------
+Maintain:
+- keyboard navigation
+- focus states
+- readable contrast
+- ARIA labels
+- reduced motion
+- touch accessibility
+- screen-reader compatibility
+
+SECURITY TESTING
+----------------
+Verify:
+1. User A cannot access User B private data.
+2. User A cannot read User B messages.
+3. Private email/password never appears in public profile.
+4. Blocked users cannot continue contacting each other.
+5. Reports work.
+6. Deleted data follows the real retention architecture.
+7. Client-side ID manipulation cannot bypass authorization.
+8. Anonymous identity cannot be reverse-engineered through normal UI/API behavior.
+
+PRODUCTION
+----------
+Prepare:
+- deployment
+- environment variables
+- HTTPS
+- domain
+- error monitoring
+- privacy policy
+- terms
+- safety/community guidelines
+- account deletion flow
+- support/contact flow
+
+Do not collect unnecessary analytics.
+
+FINAL TEST
+----------
+Test:
+- authentication
+- onboarding
+- country/language
+- 3D world
+- growth
+- sounds
+- Calm Mode
+- AI
+- AI safety
+- anonymous matching
+- persistent connections
+- chat
+- block/report
+- privacy
+- mobile
+- desktop
+- error states
+- unauthorized access
+
+FINAL PRODUCT LOOP
+------------------
+PAUSE
+↓
+UNDERSTAND
+↓
+PRACTICE
+↓
+CONNECT
+↓
+ACT
+↓
+GROW
+↓
+RETURN TO REAL LIFE
+
+MIND MANTRA must help users return to real life better prepared.
+It must not encourage permanent escape or emotional dependency.
+
+================================================
+FINAL GLOBAL INSTRUCTION TO GOOGLE AI STUDIO
+================================================
+
+When implementing any stage:
+
+1. Read the existing project before changing it.
+2. Preserve working functionality.
+3. Modify only the current stage.
+4. Do not perform unrelated refactors.
+5. Do not randomly change UI.
+6. Do not replace existing components without a clear reason.
+7. Keep 3D world architecture modular.
+8. Keep AI architecture isolated.
+9. Keep privacy and safety explicit.
+10. Test the current stage before moving forward.
+11. Fix regressions before continuing.
+12. Never claim a feature is secure/private if it is only mocked.
+13. Clearly report limitations and required external services.
+
+BUILD ORDER:
+Stage 1 → Test → Lock
+Stage 2 → Test → Lock
+Stage 3 → Test → Lock
+Stage 4 → Test → Lock
+Stage 5 → Security Test → Launch

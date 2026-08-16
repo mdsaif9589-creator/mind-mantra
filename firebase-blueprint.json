@@ -1,0 +1,107 @@
+{
+  "collections": [
+    {
+      "name": "users",
+      "description": "Private user account data",
+      "rules": [
+        { "action": "read", "condition": "isAuthenticated() && request.auth.uid == resource.id" },
+        { "action": "write", "condition": "isAuthenticated() && request.auth.uid == resource.id" }
+      ],
+      "schema": {
+        "email": "string",
+        "displayName": "string",
+        "country": "string",
+        "language": "string",
+        "onboardingStep": "string",
+        "createdAt": "timestamp"
+      }
+    },
+    {
+      "name": "user_state",
+      "description": "Private growth and app state",
+      "rules": [
+        { "action": "read", "condition": "isAuthenticated() && request.auth.uid == resource.id" },
+        { "action": "write", "condition": "isAuthenticated() && request.auth.uid == resource.id" }
+      ],
+      "schema": {
+        "growthProgress": "number",
+        "completedGoals": "number",
+        "completedPracticeSessions": "number",
+        "completedReflectionSessions": "number",
+        "completedRealLifeActions": "number",
+        "updatedAt": "timestamp"
+      }
+    },
+    {
+      "name": "anonymous_profiles",
+      "description": "Public anonymous profiles for connections",
+      "rules": [
+        { "action": "read", "condition": "isAuthenticated()" },
+        { "action": "write", "condition": "isAuthenticated() && request.auth.uid == resource.id" }
+      ],
+      "schema": {
+        "displayName": "string",
+        "bio": "string",
+        "isSetup": "boolean",
+        "updatedAt": "timestamp"
+      }
+    },
+    {
+      "name": "connections",
+      "description": "Anonymous chat connections between two users",
+      "rules": [
+        { "action": "read", "condition": "isAuthenticated() && request.auth.uid in resource.data.participants" },
+        { "action": "create", "condition": "isAuthenticated() && request.auth.uid in request.resource.data.participants" },
+        { "action": "update", "condition": "isAuthenticated() && request.auth.uid in resource.data.participants" }
+      ],
+      "schema": {
+        "participants": "array of strings",
+        "isSavedBy": "array of strings",
+        "lastActive": "timestamp",
+        "createdAt": "timestamp"
+      },
+      "subcollections": [
+        {
+          "name": "messages",
+          "description": "Chat messages within a connection",
+          "rules": [
+            { "action": "read", "condition": "isAuthenticated() && request.auth.uid in get(/databases/$(database)/documents/connections/$(connectionId)).data.participants" },
+            { "action": "create", "condition": "isAuthenticated() && request.auth.uid == request.resource.data.senderId && request.auth.uid in get(/databases/$(database)/documents/connections/$(connectionId)).data.participants" }
+          ],
+          "schema": {
+            "senderId": "string",
+            "text": "string",
+            "timestamp": "timestamp"
+          }
+        }
+      ]
+    },
+    {
+      "name": "blocks",
+      "description": "User block list",
+      "rules": [
+        { "action": "read", "condition": "isAuthenticated() && request.auth.uid == resource.data.blockerId" },
+        { "action": "create", "condition": "isAuthenticated() && request.auth.uid == request.resource.data.blockerId" }
+      ],
+      "schema": {
+        "blockerId": "string",
+        "blockedId": "string",
+        "timestamp": "timestamp"
+      }
+    },
+    {
+      "name": "reports",
+      "description": "User reports for moderation",
+      "rules": [
+        { "action": "create", "condition": "isAuthenticated() && request.auth.uid == request.resource.data.reporterId" }
+      ],
+      "schema": {
+        "reporterId": "string",
+        "reportedId": "string",
+        "connectionId": "string",
+        "reason": "string",
+        "timestamp": "timestamp"
+      }
+    }
+  ]
+}
